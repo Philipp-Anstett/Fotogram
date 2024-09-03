@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotogram</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon_fotogram.png" />
+    <script src="functions.js"></script>
+  </head>
+  <body>
+    <!--Header-Section-->
+    <header>
+      <div class="container-top">
+        <img
+          class="logo"
+          src="assets/favicon_fotogram.png"
+          alt="Eine bunte Blume als Logo"
+        />
+        <h1>Fotogram</h1>
+      </div>
+    </header>
+    <!--Test-->
+    <!--Main-Section-->
+    <div class="grid-section">
+      <div class="grid-gallery">
+        <div class="grid-item">
+          <img
+            class="images"
+            src="./jpg/img1.jpg"
+            onclick="fullView(this.src)"
+            alt="Ein Bild von einem Bambuswald in Vietnam"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="images"
+            src="./jpg/img2.jpg"
+            onclick="fullView(this.src)"
+            alt="Ein Bild von New York"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="images"
+            src="./jpg/img3.jpg"
+            onclick="fullView(this.src)"
+            alt="Ein Bild einer Landschaft in Neuseeland"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="images"
+            src="./jpg/img4.jpg"
+            onclick="fullView(this.src)"
+            alt="Ein Bild einer Katze"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="images"
+            src="./jpg/img5.jpg"
+            onclick="fullView(this.src)"
+            alt="Ein Bild der Erdkugel"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="images"
+            src="./jpg/img6.jpg"
+            onclick="fullView(this.src)"
+            alt="Ein Bild von einem Model im Bikini"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="images"
+            src="./jpg/img7.jpg"
+            onclick="fullView(this.src)"
+            alt="Ein Bild einer Stadt in Vietnam"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="images"
+            src="./jpg/img8.jpg"
+            onclick="fullView(this.src)"
+            alt="Ein Bild der Reisfelder in Vietnam"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="images"
+            src="./jpg/img9.jpg"
+            onclick="fullView(this.src)"
+            alt="Ein Bild mit Bergen und Eis"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="images"
+            src="./jpg/img10.jpg"
+            onclick="fullView(this.src)"
+            alt="Ein Bild eines durchwucherten Waldes"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="images"
+            src="./jpg/img11.jpg"
+            onclick="fullView(this.src)"
+            alt="Ein Bild mit Bergen und einer Schlucht"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            class="images"
+            src="./jpg/img12.jpg"
+            onclick="fullView(this.src)"
+            alt="Ein Bild vom Mond"
+          />
+        </div>
+      </div>
+    </div>
+    <!--Image-Popup-->
+    <div id="fullImageView">
+      <img id="fullImage" />
+      <div class="icons">
+        <img
+          onclick="closeFullView()"
+          class="x-mark"
+          src="svg`s/xmark.svg"
+          alt="X"
+        />
+        <img
+          class="toLeft"
+          src="svg`s/arrow-left.svg"
+          onclick="previous()"
+          alt="Pfeil nach links"
+        />
+        <img
+          class="toRight"
+          src="svg`s/arrow-right.svg"
+          onclick="next()"
+          alt="Pfeil nach rechts"
+        />
+      </div>
+    </div>
+  </body>
+</html>
